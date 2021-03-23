@@ -12,13 +12,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <b><a class="navbar-brand logo" th:href="@{/}">Beetle</a></b>
+                <b><a class="navbar-brand logo" th:href="@{/}">ProgramChat</a></b>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <form class="navbar-form navbar-left" action="/" method="get">
+                <form class="navbar-form navbar-left" style="margin-left: 40%" action="/" method="get">
                     <div class="form-group">
-                        <input type="text" class="form-control search-input" name="search" placeholder="输入问题">
+                        <input type="text" class="form-control search-input" name="search" placeholder="全站搜索">
                     </div>
                     <button type="submit" class="btn btn-default">搜索</button>
                 </form>
@@ -29,10 +29,10 @@
                         </a>
                     </li>
                     <li th:if="${session.user == null}" data-toggle="tooltip" data-placement="bottom" title="请先登录">
-                        <a>提问</a>
+                        <a>发帖</a>
                     </li>
                     <li th:if="${session.user != null}">
-                        <a th:href="@{/publish}">提问</a>
+                        <a th:href="@{/publish}">发帖</a>
                     </li>
                     <li th:if="${session.user != null}" role="presentation" data-toggle="tooltip" data-placement="bottom" th:title="${session.unreadCount}+条未读消息">
                         <a href="/profile/replies">

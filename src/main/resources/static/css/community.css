@@ -279,7 +279,9 @@ body {
 }
 
 .login-body {
+    /*background-image: url("/images/bg/show-bg4.jpeg");*/
     background-image: url("/images/bg/show-bg3.jpg");
+    /*background-size: auto;*/
 }
 
 .login-logo {
@@ -311,8 +313,17 @@ body {
 }
 
 .login-page-main {
-    padding: 40px 0 50px 50px;
+    padding: 40px 0 20px 50px;
     height: 420px
+}
+
+.login-qq{
+    margin-top: 22px;
+    float: right;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-weight: bold;
 }
 
 .login-left {

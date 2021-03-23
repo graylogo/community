@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>注册 - 甲壳虫社区</title>
+    <title>注册 - ProgramChat</title>
     <head th:replace="fragment/import::common"></head>
 </head>
 <body class="register-body">
@@ -11,7 +11,7 @@
         <div class="row login-page-main">
             <div class="login-left col-lg-8 col-md-8 col-sm-8 col-xs-8">
                 <div class="login-logo">
-                    <b><a class="logo" th:href="@{/}">Beetle Community</a></b>
+                    <b><a class="logo" th:href="@{/}">ProgramChat</a></b>
                 </div>
                 <form id="register-form" class="login-form" action="/register" method="post"
                       data-validator-option="{theme:'yellow_right_effect', stopOnError:true}">
@@ -45,22 +45,8 @@
             </div>
             <div class="login-right col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div class="login-other-all">
-                    <h4>第三方账号登录</h4>
-                    <a th:href="@{https://github.com/login/oauth/authorize(client_id=${@environment.getProperty('github.client_id')},redirect_uri=${@environment.getProperty('github.redirect_uri')},scope='user',state='githublogin')}"
-                        class="login-other">
-                        <img src="/images/github.svg" class="login-icon">
-                        Github登录
-                    </a>
-                    <a th:href="@{https://gitee.com/oauth/authorize(client_id=${@environment.getProperty('gitee.client_id')},redirect_uri=${@environment.getProperty('gitee.redirect_uri')},response_type='code',scope='user_info',state='giteelogin')}"
-                       class="login-other">
-                        <img src="/images/gitee.svg" class="login-icon">
-                        Gitee登录
-                    </a>
-                    <a th:href="@{https://graph.qq.com/oauth2.0/authorize(response_type='code',client_id=${@environment.getProperty('qq.client_id')},redirect_uri=${@environment.getProperty('qq.redirect_uri')},state='qqlogin')}"
-                       class="login-other">
-                        <img src="/images/QQ.svg" class="login-icon">
-                        QQ登录
-                    </a>
+                    <h4>注册须知：</h4>
+
                 </div>
 
             </div>

@@ -25,7 +25,7 @@
             <properties>
                 <db.url>jdbc:mysql://localhost:3306/db_community?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=UTC</db.url>
                 <db.user>root</db.user>
-                <db.password>root</db.password>
+                <db.password>12345678</db.password>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -34,6 +34,7 @@
     </profiles>
 
     <dependencies>
+<!--        启动器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
